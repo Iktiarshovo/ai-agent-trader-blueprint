@@ -1,0 +1,8 @@
+# Update the package list
+sudo apt update
+
+# Upgrade installed packages
+sudo apt upgrade -y
+
+# Install necessary tools (git, python3, pip, screen)
+sudo apt install git python3 python3-pip screen -y
