@@ -1,1 +1,14 @@
-cd ai-agent-trader-blueprint
+Download the bot's code to your VPS:git clone https://github.com/YOUR_USERNAME/ai-agent-trader-blueprint.git
+Go into the bot's folder: cd ai-agent-trader-blueprint
+Create the .env file from the template:cp .env.example .env
+Edit the .env file to add your keys:nano .env (Enter all your API keys and the base64 private key you got in Step 3.
+Press Ctrl+X, then Y, and finally Enter to save the file)
+Install Python Dependencies: pip3 install -r requirements.txt
+Run the Bot:screen -S mybot
+Now, run the bot inside the screen session:python3 bot_blueprint.py(Once the bot starts running, detach from the screen session (the bot will continue to run in the background):
+Press Ctrl+A and then press D)
+Check the Bot's Status (Dashboard Check):screen -ls(You should see a session named mybot)
+To re-attach to the screen and see the bot's live logs:screen -r mybot(You can now see all the bot's activity. To detach again, press Ctrl+A then D)
+Stop the Bot:FirsTo stop the bot press:screen -r mybot
+To stop the bot, press:Ctrl+C
+To completely close the screen session:exit
