@@ -1,159 +1,53 @@
-# Superteam Agentic Engineering Grant — Application Draft
+# Superteam Agentic Engineering Grant Application
 
-This draft is tailored to the current **Backend-Outreach-Agent** repository and can be copy-pasted into Superteam's application form, then edited for exact grant rubric wording.
+**Project Name:** AI Agent Trader Blueprint  
 
----
-
-## 1) Project Title
-
-**Backend Outreach Agent: Autonomous Local Business Discovery + Contact Enrichment + Campaign Readiness**
+**Target Deadline:** May 09, 2026 (For Colosseum Frontier Hackathon submission on May 11)
 
 ---
 
-## 2) One-line Summary
-
-An agentic backend service that autonomously discovers local businesses, filters relevance, enriches contact records, and prepares outreach-ready datasets for downstream campaign execution.
-
----
-
-## 3) Problem Statement
-
-Small teams and solo operators spend too much time manually sourcing leads, validating business fit, collecting contact data, and formatting outreach lists. The workflow is repetitive, error-prone, and fragmented across maps, spreadsheets, and ad-hoc scripts.
-
-Current pain points:
-- Manual lead discovery lacks consistency and scale.
-- Data quality suffers without automated filtering and deduplication.
-- Teams struggle to maintain a structured, reusable outreach pipeline.
+## 1. One-line Summary
+A powerful, multi-AI synergy trading bot architecture for Solana. It leverages Large Language Models (LLMs) to continuously analyze on-chain token data and autonomously execute smart trading decisions.
 
 ---
 
-## 4) Why This Is “Agentic Engineering”
-
-This project is agentic because it chains multiple tools/services into an autonomous workflow that can:
-1. Gather candidate entities from mapping sources.
-2. Apply filtering logic to score/select relevant leads.
-3. Enrich records via email/contact extraction paths.
-4. Persist structured outputs to sheets/state for iterative runs.
-5. Produce reports and artifacts for human-in-the-loop review.
-
-The system goes beyond single-prompt generation by orchestrating decision steps, intermediate state, and tool calls across a multi-stage pipeline.
+## 2. Problem Statement
+Building robust, autonomous trading algorithms on Solana requires complex on-chain data parsing, sentiment analysis, and rapid execution logic. For solo indie developers, writing this boilerplate from scratch is extremely time-consuming. Currently, there is a massive lack of accessible, AI-native architectures that allow developers to deploy multi-model trading logic immediately without spending weeks on infrastructure.
 
 ---
 
-## 5) Current Build (What Exists Today)
+## 3. Proposed Solution (Agentic Engineering)
+I am building the **"AI Agent Trader Blueprint"** — an open-source, agentic workflow specifically tailored for the Solana ecosystem. 
 
-From this repository, current components include:
-- Core entrypoint orchestration (`index.js`).
-- Service integrations for maps, email, and sheets (`services/maps.js`, `services/email.js`, `services/sheets.js`).
-- Filtering utilities (`utils/filter.js`).
-- State/data artifacts (`location_state.json`, `locations.js`).
-- Operational reports documenting launch and analytics.
-
-This demonstrates a working foundation with real workflows, measurable outputs, and iterative reporting.
+This system goes beyond a simple chat interface. It is an autonomous agent that:
+1. Fetches real-time on-chain data and token metrics via Solana RPCs.
+2. Passes the data through an AI Intelligence Layer (Groq/Claude) to evaluate market sentiment and calculate risk.
+3. Generates structured JSON trading decisions (Buy/Sell/Hold).
+4. Autonomously signs and executes the transaction on the Solana network using `@solana/web3.js`.
 
 ---
 
-## 6) Proposed Grant Scope (What Funding Unlocks)
+## 4. Use of Funds ($200 USDG)
+As an indie developer operating on a tight budget, accessing premium AI coding tools is a significant barrier. The fixed **$200 USDG grant** will be used exclusively to secure a pro subscription for an advanced AI coding assistant (Cursor Pro / Claude 3.5 Sonnet). 
 
-With Superteam grant support, I will deliver:
-
-### Milestone 1 — Reliability + Data Quality
-- Add robust retry/backoff, structured error handling, and stronger validation.
-- Improve lead scoring/filtering and deduplication across runs.
-- Add deterministic run summaries and quality metrics.
-
-### Milestone 2 — Agentic Orchestration Upgrade
-- Introduce explicit task planning/state transitions for each pipeline stage.
-- Add configurable strategies (e.g., by geography, business type, quality threshold).
-- Enable resumable runs and safer partial-failure recovery.
-
-### Milestone 3 — Operator UX + Reporting
-- Add clearer run dashboards/log outputs and standardized report artifacts.
-- Improve handoff format for campaign tools/CRMs.
-- Publish implementation notes and a replicable template for other builders.
+This tool will exponentially accelerate my development speed, help me debug complex Solana web3 integrations, and allow me to compress weeks of coding into days so I can ship a working MVP for the Colosseum Hackathon.
 
 ---
 
-## 7) Deliverables
+## 5. Goals & Milestones
+To ensure submission before the Colosseum Frontier Hackathon deadline, I will follow this rapid shipping schedule:
 
-- Open-source improvements to the existing backend agent codebase.
-- Documentation for setup, runbooks, and architecture.
-- Example output dataset + report templates.
-- Public demo walkthrough (video/thread) showing end-to-end autonomous execution.
-
----
-
-## 8) Success Metrics
-
-Primary metrics:
-- **Lead throughput**: qualified leads produced per run.
-- **Data quality**: % records with valid contact + required enrichment fields.
-- **Operator time saved**: reduction in manual hours per outreach batch.
-- **Run reliability**: completion rate and mean recovery time from failures.
-
-Secondary metrics:
-- Reusability by other operators/teams.
-- Community adoption (forks, clones, usage feedback).
+* **May 4-5 (Setup & Tooling):** Secure Cursor/Claude Pro subscription. Scaffold the Node.js backend and establish fast RPC connections.
+* **May 6-8 (AI Intelligence Layer):** Integrate the core agentic workflow. Connect LLMs to fetch and analyze live Solana token metrics.
+* **May 9-10 (Execution Logic):** Build and test the transaction signing module. Ensure the agent can autonomously format and send transactions to the Solana network (Devnet/Mainnet).
+* **May 11 (Ship & Submit):** Finalize MVP, write technical documentation, record a demo video, and submit the working product to the Colosseum Frontier Hackathon.
 
 ---
 
-## 9) Timeline (Example: 4–6 Weeks)
-
-- **Week 1:** Baseline audit, instrumentation, and reliability plan.
-- **Week 2–3:** Milestone 1 implementation + tests.
-- **Week 3–4:** Milestone 2 orchestration/state upgrades.
-- **Week 5:** Milestone 3 reporting + UX improvements.
-- **Week 6:** Documentation, demo publication, and final grant report.
+## 6. Primary KPI (Success Metric)
+The single main metric of success is the **successful submission of a functional MVP to the Colosseum Frontier Hackathon before May 11th**, demonstrating a complete, uninterrupted cycle where the AI agent autonomously analyzes Solana on-chain data and executes a smart contract transaction.
 
 ---
 
-## 10) Why Superteam
-
-Superteam is an ideal partner because it combines:
-- Deep Solana-native builder ecosystem support,
-- Fast feedback loops from experienced contributors,
-- Distribution and visibility for practical agentic tooling.
-
-This grant would accelerate a production-oriented agentic system that others can reuse for real outreach workflows.
-
----
-
-## 11) Budget Request (Template)
-
-**Requested amount:** _[Insert amount requested in the grant form]_  
-**Use of funds:**
-- Engineering time (pipeline hardening + orchestration features),
-- Infra/tooling costs for testing and run validation,
-- Documentation/demo production and maintenance.
-
----
-
-## 12) Risks & Mitigations
-
-- **Data source variability** → Build adapters + validation checks.
-- **Quality drift in enrichment** → Add periodic sampling and scoring thresholds.
-- **Operational failures** → Add resumable state and fail-safe checkpoints.
-
----
-
-## 13) Application Form Short Answers (Copy Variants)
-
-### A) 280-character version
-Building an agentic backend that autonomously finds local businesses, filters for relevance, enriches contact data, and outputs outreach-ready lead lists. Grant support will fund reliability, orchestration, and reporting upgrades for production-grade execution.
-
-### B) 2–4 sentence version
-I’m building a backend outreach agent that automates lead discovery, qualification, enrichment, and reporting. Instead of manual list-building, it runs a multi-stage autonomous workflow across maps, filtering, and sheets integrations. With Superteam funding, I’ll harden reliability, improve agentic orchestration, and ship reusable documentation/demos.
-
-### C) “What will you ship?” version
-I will ship a hardened, open-source agentic outreach pipeline with measurable quality/reliability metrics, runbooks, and demo artifacts. Deliverables include orchestration/state upgrades, data-quality improvements, and standardized reporting outputs that other builders can adopt.
-
----
-
-## 14) Submission Checklist
-
-- [ ] Replace placeholders (name, amount, links).
-- [ ] Add repo link and 1–2 demo artifacts.
-- [ ] Add concrete baseline metrics from current runs.
-- [ ] Align milestone language to current Superteam form fields.
-- [ ] Keep first paragraph concise and outcome-focused.
-
+## 7. Proof of Work & Developer Background
+I am an indie developer with a strong track record in building complex AI systems. I am the architect behind ARGON, an autonomous multi-agent content intelligence system. I have deep practical experience in orchestrating multiple LLMs, integrating APIs, and deploying "Set and Forget" automation pipelines using Node.js. I know how to turn ideas into shipped production code.
